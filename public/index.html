@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Vanilla JS Project: Meal App</title>
+    <link href="/styles/styles.css" rel="stylesheet" />
+    <link href="/images/favicon.png?v=1" rel="icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black|Open+Sans:300,400,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1 class="header__title">Vanilla JS Project: Meal App</h1>
+      </div>
+    </div>
+
+    <div class="search-bg">
+      <div class="container">
+        <h3>Meal Finder</h3>
+        <div class="flex">
+          <form class="flex" id="submit">
+            <input
+              type="text"
+              id="search"
+              placeholder="Search for meals or keywords"
+            />
+            <button class="search-btn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <button class="random-btn" id="random">
+            <i class="fas fa-random"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="result-heading"></div>
+      <div id="meals" class="meals"></div>
+    </div>
+
+    <div class="single-meal-bg">
+      <div class="container">
+        <div id="single-meal"></div>
+      </div>
+    </div>
+
+    <script src="/scripts/bundle.js"></script>
+  </body>
+</html>
